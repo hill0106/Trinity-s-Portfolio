@@ -1,0 +1,46 @@
+.animation {
+  width: 100%;
+  height: 100vh;
+  background-color: #83b0c9;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#first {
+  stroke-dasharray: 4522px;
+  stroke-dashoffset: 4522px;
+  animation: fadeInside 3s ease-in forwards;
+}
+
+@keyframes fadeInside {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes Filled {
+  from {
+    fill: none;
+  }
+  to {
+    fill: #455e6b;
+  }
+}
+
+// @media screen and (max-width: 1110px) {
+//   div.animation {
+//     display: flex;
+//     width: 100%;
+//     height: 100vh;
+//     div.logo {
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       align-items: center;
+//     }
+//   }
+// }

@@ -1,0 +1,982 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+.blue {
+  position: absolute;
+  top: -22vh;
+  right: 0;
+  z-index: -4;
+  width: 25vw;
+  height: 150vh;
+}
+
+.Left {
+  height: 150%;
+  position: absolute;
+  top: -25vh;
+  left: 0;
+  z-index: -4;
+  width: 15vw;
+  background-color: #83b0c9;
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+nav ul a {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+  color: #455e6b;
+  margin-right: 2rem;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 400px;
+          flex: 2 1 400px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.left img.profilePic {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 13vh;
+  left: 20vw;
+}
+
+main section.left h3 {
+  position: absolute;
+  font-size: 40px;
+  top: 48vh;
+  left: 21vw;
+}
+
+main section.left div.line {
+  background-color: #455e6b;
+  width: 10vw;
+  height: 0.3vh;
+  top: 61vh;
+  left: 22.5vw;
+  position: absolute;
+}
+
+main section.left h5 {
+  top: 68vh;
+  left: 21vw;
+  position: absolute;
+}
+
+main section.left div.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 70vh;
+  margin-left: 15vw;
+}
+
+main section.left div.link a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+main section.left div.link a i::before {
+  color: #477e9d;
+}
+
+main section.right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 220px;
+          flex: 1 1 220px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+  margin-right: 30vw;
+}
+
+main section.right h1 {
+  font-size: 55px;
+  color: #455e6b;
+}
+
+main section.right h3 {
+  color: #455e6b;
+}
+
+main section.right .resume {
+  background-color: #477e9d;
+  width: 20vw;
+  height: 4vw;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.right .resume a {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  text-align: center;
+}
+
+main section.form {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 600px;
+          flex: 3 1 600px;
+  padding-left: 6rem;
+  padding-right: 5rem;
+  padding-top: 3rem;
+}
+
+main section.form table {
+  border-collapse: collapses;
+}
+
+main section.form table tr {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  border-bottom: 1.5px solid #92c4e0;
+}
+
+main section.form table tr th {
+  font-family: "Oswald", sans-serif;
+}
+
+main section.form table tr td {
+  padding: 0.8rem;
+  font-family: "Roboto", sans-serif;
+}
+
+main section.form table tr td .c {
+  width: 35px;
+  height: 35px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main section.form table tr:hover {
+  background-color: #e1eef5;
+}
+
+main section.form div.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 55px;
+}
+
+main section.form div.link a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+main section.form div.link a i::before {
+  color: #477e9d;
+}
+
+main section.pic {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 3rem;
+}
+
+main section.pic .me {
+  width: 380px;
+  height: 420px;
+  position: absolute;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 3rem;
+  margin-left: 18rem;
+  top: 30px;
+  left: 5px;
+}
+
+main section.pic .back {
+  width: 420px;
+  height: 530px;
+  background-color: #477e9d;
+  position: absolute;
+  top: 50px;
+  left: 273px;
+  z-index: -1;
+}
+
+main div.maincontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main div.maincontent section.namecard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  margin-left: 17vw;
+}
+
+main div.maincontent section.namecard div.link {
+  margin-right: 10vw;
+}
+
+main div.maincontent section.namecard div.link a {
+  margin: 1rem;
+  color: #736b6b;
+  -webkit-transform: translate(10%, 10%);
+          transform: translate(10%, 10%);
+}
+
+main div.maincontent section.namecard div.link img {
+  width: 30vw;
+  height: 25vw;
+  z-index: -1;
+  position: relative;
+}
+
+main div.maincontent section.namecard div.link .contactText {
+  margin-bottom: 1rem;
+}
+
+main div.maincontent div.divider {
+  width: 0.2rem;
+  height: 85vh;
+  background-color: #736b6b;
+}
+
+main div.maincontent section.table {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  margin-left: 5rem;
+}
+
+main div.maincontent section.table form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 70vh;
+}
+
+main div.maincontent section.table form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0.5rem;
+}
+
+main div.maincontent section.table form div label {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  margin-right: 2rem;
+}
+
+main div.maincontent section.table form div input {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  background-color: #c5e5f6;
+  color: #455e6b;
+  border-radius: 0.5rem;
+  border: none;
+  width: 90%;
+  margin-left: 1rem;
+}
+
+main div.maincontent section.table form div textarea {
+  vertical-align: top;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  background-color: #c5e5f6;
+  color: #455e6b;
+  border-radius: 0.5rem;
+  border: none;
+  width: 90%;
+}
+
+main div.maincontent section.table form button {
+  background-color: #83b0c9;
+  width: 8vw;
+  height: 15vh;
+  border: none;
+  border-radius: 5rem;
+  color: white;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 4rem;
+  margin-top: 2rem;
+}
+
+main .project1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .project1 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 40vw;
+  -webkit-transform: translateX(45%);
+          transform: translateX(45%);
+}
+
+main .project1 .text {
+  -webkit-transform: translateX(45%);
+          transform: translateX(45%);
+}
+
+main .project1 .text p,
+main .project1 .text a {
+  font-family: "Oswald", sans-serif;
+  font-size: larger;
+  margin-top: 1rem;
+}
+
+main .project2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .project2 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 60vw;
+  -webkit-transform: translateX(30%);
+          transform: translateX(30%);
+}
+
+main .project2 .text {
+  -webkit-transform: translateX(30%);
+          transform: translateX(30%);
+}
+
+main .project2 .text p,
+main .project2 .text a {
+  font-family: "Oswald", sans-serif;
+  font-size: larger;
+  margin-top: 1rem;
+}
+
+main .project3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .project3 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 60vw;
+  -webkit-transform: translateX(30%);
+          transform: translateX(30%);
+}
+
+main .project3 .text {
+  -webkit-transform: translateX(25%);
+          transform: translateX(25%);
+}
+
+main .project3 .text p,
+main .project3 .text a {
+  font-family: "Oswald", sans-serif;
+  font-size: larger;
+  margin-top: 1rem;
+}
+
+main .project4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .project4 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 60vw;
+  -webkit-transform: translateX(35%);
+          transform: translateX(35%);
+}
+
+main .project4 .text {
+  -webkit-transform: translateX(30%);
+          transform: translateX(30%);
+}
+
+main .project4 .text p,
+main .project4 .text a {
+  font-family: "Oswald", sans-serif;
+  font-size: larger;
+  margin-top: 1rem;
+}
+
+.active {
+  color: #477e9d;
+}
+
+@media screen and (max-width: 1100px) {
+  .Left {
+    display: none;
+  }
+  .blue {
+    position: absolute;
+    right: -5vw;
+    z-index: -4;
+    width: 25vw;
+    height: 150%;
+    opacity: 0.5;
+  }
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  nav ul .Home a {
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+  }
+  nav ul .Home a .fa-solid {
+    margin-right: 0.1rem;
+  }
+  nav ul .About a {
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+    margin-left: 0.1rem;
+  }
+  nav ul .About a .fa-solid {
+    margin-right: 0.3rem;
+  }
+  nav ul .Contact a {
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+  }
+  nav ul .Contact a .fa-solid {
+    margin-right: 0.3rem;
+  }
+  nav ul .Project a {
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+  }
+  nav ul .Project a .fa-solid {
+    margin-right: 0.2rem;
+  }
+  main .project1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .project1 img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 80vw;
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+  }
+  main .project1 .text {
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80%;
+  }
+  main .project1 .text p,
+  main .project1 .text a {
+    font-family: "Oswald", sans-serif;
+    font-size: large;
+    margin-top: 1rem;
+  }
+  main .project2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .project2 img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 80vw;
+    -webkit-transform: translateX(1%);
+            transform: translateX(1%);
+  }
+  main .project2 .text {
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80%;
+  }
+  main .project2 .text p,
+  main .project2 .text a {
+    font-family: "Oswald", sans-serif;
+    font-size: large;
+    margin-top: 1rem;
+  }
+  main .project3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .project3 img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 80vw;
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+  }
+  main .project3 .text {
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80%;
+  }
+  main .project3 .text p,
+  main .project3 .text a {
+    font-family: "Oswald", sans-serif;
+    font-size: large;
+    margin-top: 1rem;
+  }
+  main .project4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .project4 img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 80vw;
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+  }
+  main .project4 .text {
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80%;
+  }
+  main .project4 .text p,
+  main .project4 .text a {
+    font-family: "Oswald", sans-serif;
+    font-size: larger;
+    margin-top: 1rem;
+  }
+  main div.maincontent {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main div.maincontent section.namecard div.link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main div.maincontent section.namecard div.link img {
+    width: 70vw;
+    height: 55vw;
+    z-index: -1;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  main div.maincontent section.namecard div.link a {
+    margin: 1rem;
+    color: #736b6b;
+  }
+  main div.maincontent div.divider {
+    display: none;
+  }
+  main div.maincontent section.table {
+    margin-left: 0rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 2rem;
+  }
+  main div.maincontent section.table form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main div.maincontent section.table form div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0.5rem;
+  }
+  main div.maincontent section.table form div label {
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+  }
+  main div.maincontent section.table form div input,
+  main div.maincontent section.table form div textarea {
+    width: 60%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  main div.maincontent section.table form button {
+    width: 30vw;
+    height: 5vh;
+    margin-top: 1rem;
+  }
+  main section.left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.left img.profilePic {
+    width: 35vw;
+    height: 35vw;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: static;
+  }
+  main section.left h3 {
+    position: static;
+    font-size: 40px;
+    margin-top: 0.5rem;
+  }
+  main section.left div.line {
+    background-color: #455e6b;
+    margin: 1rem;
+    position: static;
+  }
+  main section.left h5 {
+    position: static;
+  }
+  main section.left div.link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 5vh;
+    margin-right: 15vw;
+    position: absolute;
+    z-index: 10;
+  }
+  main section.left div.link a i::before {
+    color: #477e9d;
+  }
+  main section.right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 30vw;
+    text-align: center;
+    position: absolute;
+    top: 90vh;
+  }
+  main section.right h1 {
+    font-size: 55px;
+    color: #455e6b;
+  }
+  main section.right h3 {
+    color: #455e6b;
+  }
+  main section.right div.resume {
+    background-color: #477e9d;
+    width: 52vw;
+    height: 10vw;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.right div.resume a {
+    font-family: "Oswald", sans-serif;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  main section.form {
+    padding: 2rem;
+  }
+  main section.pic div.meContainer {
+    -webkit-transform: translateX(-30%);
+            transform: translateX(-30%);
+  }
+  main section.pic div.meContainer .me {
+    width: 50vw;
+    height: 60vw;
+    margin-bottom: 2rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  main section.pic .back {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
