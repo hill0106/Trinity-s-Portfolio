@@ -23,47 +23,52 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
     <!--Website Icon-->
-    <link rel="shortcut icon" href="./ICONS/WebIcon.png" />
-    <link rel="bookmark" href="./ICONS/WebIcon.png" />
+    <link rel="shortcut icon" href="../static/ICONS/WebIcon.png" />
+    <link rel="bookmark" href="../static/ICONS/WebIcon.png" />
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--fontawesome-->
     <script src="https://kit.fontawesome.com/6505e56344.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="../static/about.css" />
 </head>
 <body>
     <div class="Left"></div>
     <header>
         <nav>
             <ul>
-                <li class="Home"><a href="./index.html"><i class="fa-solid fa-house fa-md"></i>  Home</a></li>
+                <li class="Home"><a href="./"><i class="fa-solid fa-house fa-md"></i>  Home</a></li>
                 <li class="About"><a href="#" class="active" ><i class="fa-solid fa-image-portrait fa-lg"></i>     About</a></li>
-                <li class="Contact"><a href="./Contact.html"><i class="fa-solid fa-phone fa-md"></i> Contact</a></li>
                 <li class="Project"><a href="./Project.html"><i class="fa-brands fa-github fa-lg"></i>   Project</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="pic">
-            <div class="meContainer">
-                <img src="./ICONS/ME.jpg" class="me" />
-            </div>
-            <div class="back"></div>
-        </section>
-        <section class="form">
+       <div class="FAndP">
+        <div class="form">
+            <h1 style="font-size: 50px;
+            color: #477e9d;">Profile</h1>
             <table>
                 <tr style="border-top: 1.5px solid #92c4e0">
-                    <th style="width: 20%">Profile</th>
-                    <td style="width: 80%">I am majoring in Computer Science at National Central University. I am a junior student.</td>
-                </tr>
-                <tr>
                     <th>Education</th>
-                    <td>National Central University CSIE</td>
+                    <td>
+                        <ul>
+                            <li>Senior, National Central University Computer Science</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>                 
+                    <th style="width: 20%">Age</th>
+                    <td style="width: 80%">
+                        <ul>
+                            <li>21</li>
+                        </ul>
+                    </td>
                 </tr>
                 <tr>
                     <th>Work Experience</th>
                     <td>
                         <ol>
+                            <li>Web and APP's frontend developer in NoonSpace.</li>
                             <li>NCU App Team Frontend Developer.</li>
                             <li>English TA from 2021 to 2022.</li>
                         </ol>
@@ -81,21 +86,33 @@
                 <tr>
                     <th>Skills</th>
                     <td>
-                        <img src="./ICONS/icons8-html-5.svg" title="HTML" alt="HTML" />
-                        <img src="./ICONS/icons8-css3.svg" title="CSS" alt="CSS" />
-                        <img src="./ICONS//icons8-javascript.svg" title="JavaScript" alt="JavaScript" />
-                        <img src="./ICONS/icons8-react-native.svg" title="ReactNative" alt="ReactNative" />
+                        <img src="../static/ICONS/icons8-html-5.svg" title="HTML" alt="HTML" />
+                        <img src="../static/ICONS/icons8-css3.svg" title="CSS" alt="CSS" />
+                        <img src="../static/ICONS//icons8-javascript.svg" title="JavaScript" alt="JavaScript" />
+                        <img src="../static/ICONS/icons8-react-native.svg" title="ReactNative" alt="ReactNative" />
+                        <img class="flutter" src="https://raw.githubusercontent.com/dnfield/flutter_svg/7d374d7107561cbd906d7c0ca26fef02cc01e7c8/example/assets/flutter_logo.svg?sanitize=true" title="Flutter" alt="Flutter" />
                         <!--<img class="c" src="./ICONS/c.svg" title="C++" alt="C++" />-->
                     </td>
                 </tr>
+                <tr>
+                    <th>Links</th>
+                    <td>
+                        <a href="https://www.facebook.com/profile.php?id=100006703472960"><i class="fa-brands fa-facebook fa-3x"></i></a>
+                        <a href="https://www.instagram.com/hhill.6/"><i class="fa-brands fa-instagram fa-3x"></i></a>
+                        <a href="https://github.com/hill0106?tab=repositories"><i class="fa-brands fa-github fa-3x"></i></a>
+                    </td>
+                </tr>
             </table>
-            <div class="link">
-                <a href="https://www.facebook.com/profile.php?id=100006703472960"><i class="fa-brands fa-facebook fa-3x"></i></a>
-                <a href="https://www.instagram.com/hhill.6/"><i class="fa-brands fa-instagram fa-3x"></i></a>
-                <a href="https://github.com/hill0106?tab=repositories"><i class="fa-brands fa-github fa-3x"></i></a>
+        </div>
+        <div class="pic">
+            <div class="meContainer">
+                <img src="../static/ICONS/ME.jpg" class="me" />
+                <div class="back"></div>
             </div>
-        </section>
+            
+        </div>
+    </div>
     </main>
 </body>
-<script type="text/javascript" src="./app.js"></script>
+<script type="text/javascript" src="../static/app.js"></script>
 </html>
