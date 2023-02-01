@@ -317,7 +317,8 @@ main .left .download .resume a {
     height: 12vw;
   }
   .right p {
-    width: 60vw;
+    width: 80vw;
+    margin-bottom: 50px;
   }
   .skyC .title-line {
     margin: 0px 20px;
